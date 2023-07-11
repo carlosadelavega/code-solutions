@@ -1,5 +1,5 @@
 # DataLemur SQL Challenges
-### [DataLemur](https://datalemur.com) is a code challenge website made by Nick Singh. It hosts SQL and DS interview questions you can practice to improve your skills before applying to positions (or just to keep yourself sharp).
+### [DataLemur](https://datalemur.com) is a code challenge website made by Nick Singh. It hosts SQL and DS interview questions you can practice to improve your skills before applying to positions (or just to keep yourself sharp). Problems are grouped by difficulty and listed in the order I solved them.
 
 ## Easy
 
@@ -65,6 +65,20 @@ SELECT
  GROUP BY users.city
  ORDER BY total_orders DESC
  LIMIT 3
+```
+### 6. Histogram of Tweets [Twitter SQL Interview Question]
+```sql
+SELECT
+       tweets_per_user AS tweet_bucket,
+       COUNT(user_id) AS users_num
+  FROM (
+       SELECT 
+              COUNT(tweet_id) AS tweets_per_user,
+              user_id
+         FROM tweets
+        WHERE tweet_date BETWEEN '2022-01-01' AND '2022-12-31'
+        GROUP BY user_id) AS totals_by_user
+ GROUP BY tweets_per_user
 ```
 
 ## Medium
