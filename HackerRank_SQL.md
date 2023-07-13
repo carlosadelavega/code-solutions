@@ -169,6 +169,101 @@ SELECT name
  ORDER BY RIGHT(name,3), id;
 ```
 
+### 19. [Employee Names](https://www.hackerrank.com/challenges/name-of-employees/problem)
+
+```sql
+SELECT name
+  FROM employee
+ ORDER BY name
+```
+
+### 20. [Employee Salaries](https://www.hackerrank.com/challenges/salary-of-employees/problem)
+
+```sql
+SELECT name
+  FROM employee
+ WHERE (salary > 2000) AND months < 10
+ ORDER BY employee_id
+```
+
+### 21. [Type of Triangle](https://www.hackerrank.com/challenges/what-type-of-triangle/problem)
+
+```sql
+SELECT CASE
+       WHEN a=b AND b=c THEN "Equilateral"
+       WHEN (a+b) <= c OR (a+c) <= b OR (b+c) <= a THEN "Not A Triangle"
+       WHEN NOT (a=b OR a=c OR b=c) THEN "Scalene"
+       ELSE "Isosceles"
+       END
+  FROM triangles
+```
+
+### 22. [Revising Aggregations - The Count Function](https://www.hackerrank.com/challenges/revising-aggregations-the-count-function/problem)
+
+```sql
+SELECT COUNT(*)
+  FROM city
+ WHERE population > 100000
+```
+
+### 23. []()
+
+```sql
+
+```
+
+### 24. []()
+
+```sql
+
+```
+
+### 25. []()
+
+```sql
+
+```
+
+
 ## Medium
 
+### 1. [The PADS](https://www.hackerrank.com/challenges/the-pads/problem)
+
+```sql
+SELECT CONCAT(name, '(', SUBSTR(occupation,1,1), ')')
+  FROM occupations
+  ORDER BY name;
+
+SELECT CONCAT ("There are a total of ", occupation_count, ' ', LOWER(occupation), "s.")
+  FROM (
+       SELECT occupation, COUNT(occupation) AS occupation_count
+         FROM occupations
+        GROUP BY occupation
+       ) as t1
+ ORDER BY occupation_count, occupation;
+```
+
+### 2. []()
+
+```sql
+
+```
+
+### 3. []()
+
+```sql
+
+```
+
+### 4. []()
+
+```sql
+
+```
+
+### 5. []()
+
+```sql
+
+```
 ## Hard
