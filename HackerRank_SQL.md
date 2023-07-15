@@ -4,7 +4,7 @@
 
 ## Easy
 
-### 1. [Revising the Select Query I](https://www.hackerrank.com/challenges/revising-the-select-query/problem)
+### 1. [Revising the Select Query I](https://www.hackerrank.com/challenges/revising-the-select-query/)
 
 ```sql
 SELECT *
@@ -12,7 +12,7 @@ SELECT *
  WHERE population > 100000 AND countrycode = 'USA'
 ```
 
-### 2. [Revising the Select Query II](https://www.hackerrank.com/challenges/revising-the-select-query-2/problem)
+### 2. [Revising the Select Query II](https://www.hackerrank.com/challenges/revising-the-select-query-2/)
 
 ```sql
 SELECT name
@@ -20,13 +20,13 @@ SELECT name
  WHERE population > 120000 AND countrycode = 'USA'
 ```
 
-### 3. [Select All](https://www.hackerrank.com/challenges/select-all-sql/problem)
+### 3. [Select All](https://www.hackerrank.com/challenges/select-all-sql/)
 
 ```sql
 SELECT *
   FROM city
 ```
-### 4. [Select by ID](https://www.hackerrank.com/challenges/select-by-id/problem)
+### 4. [Select by ID](https://www.hackerrank.com/challenges/select-by-id/)
 
 ```sql
 SELECT *
@@ -34,7 +34,7 @@ SELECT *
  WHERE id = 1661
 ```
 
-### 5. [Japanese Cities' Attributes](https://www.hackerrank.com/challenges/japanese-cities-attributes/problem)
+### 5. [Japanese Cities' Attributes](https://www.hackerrank.com/challenges/japanese-cities-attributes/)
 
 ```sql
 SELECT *
@@ -42,7 +42,7 @@ SELECT *
  WHERE countrycode = 'JPN'
 ```
 
-### 6. [Japanese Cities' Names](https://www.hackerrank.com/challenges/japanese-cities-name/problem)
+### 6. [Japanese Cities' Names](https://www.hackerrank.com/challenges/japanese-cities-name/)
 
 ```sql
 SELECT name
@@ -50,14 +50,14 @@ SELECT name
  WHERE countrycode = 'JPN'
 ```
 
-### 7. [Weather Observation Station 1](https://www.hackerrank.com/challenges/weather-observation-station-1/problem)
+### 7. [Weather Observation Station 1](https://www.hackerrank.com/challenges/weather-observation-station-1/)
 
 ```sql
 SELECT city, state
   FROM station
 ```
 
-### 8. [Weather Observation Station 3](https://www.hackerrank.com/challenges/weather-observation-station-3/problem)
+### 8. [Weather Observation Station 3](https://www.hackerrank.com/challenges/weather-observation-station-3/)
 
 ```sql
 SELECT DISTINCT city
@@ -65,7 +65,7 @@ SELECT DISTINCT city
  WHERE id % 2 = 0
 ```
 
-### 9. [Weather Observation Station 4](https://www.hackerrank.com/challenges/weather-observation-station-4/problem)
+### 9. [Weather Observation Station 4](https://www.hackerrank.com/challenges/weather-observation-station-4/)
 
 ```sql
 SELECT (total_records - unique_cities)
@@ -74,7 +74,7 @@ SELECT (total_records - unique_cities)
          FROM station) AS t1
 ```
 
-### 10. [Weather Observation Station 5](https://www.hackerrank.com/challenges/weather-observation-station-5/problem)
+### 10. [Weather Observation Station 5](https://www.hackerrank.com/challenges/weather-observation-station-5/)
 
 ```sql
 SELECT city, city_length
@@ -98,7 +98,7 @@ SELECT city, city_length
  LIMIT 1;
 ```
 
-### 11. [Weather Observation Station 6](https://www.hackerrank.com/challenges/weather-observation-station-6/problem)
+### 11. [Weather Observation Station 6](https://www.hackerrank.com/challenges/weather-observation-station-6/)
 
 ```sql
 SELECT DISTINCT city
@@ -106,7 +106,7 @@ SELECT DISTINCT city
  WHERE SUBSTR(city,1,1) IN ('A', 'E', 'I', 'O', 'U');
 ```
 
-### 12. [Weather Observation Station 7](https://www.hackerrank.com/challenges/weather-observation-station-7/problem)
+### 12. [Weather Observation Station 7](https://www.hackerrank.com/challenges/weather-observation-station-7/)
 
 ```sql
 SELECT DISTINCT city
@@ -114,7 +114,7 @@ SELECT DISTINCT city
  WHERE RIGHT(city,1) in ('A', 'E', 'I', 'O', 'U')
 ```
 
-### 13. [Weather Observation Station 8](https://www.hackerrank.com/challenges/weather-observation-station-8/problem)
+### 13. [Weather Observation Station 8](https://www.hackerrank.com/challenges/weather-observation-station-8/)
 
 ```sql
 SELECT DISTINCT city
@@ -123,7 +123,7 @@ SELECT DISTINCT city
         (RIGHT(city,1) IN ('A', 'E', 'I', 'O', 'U')))
 ```
 
-### 14. [Weather Observation Station 9](https://www.hackerrank.com/challenges/weather-observation-station-9/problem)
+### 14. [Weather Observation Station 9](https://www.hackerrank.com/challenges/weather-observation-station-9/)
 
 ```sql
 SELECT DISTINCT city
@@ -131,7 +131,7 @@ SELECT DISTINCT city
  WHERE SUBSTR(city,1,1) NOT IN ('A', 'E', 'I', 'O', 'U')
 ```
 
-### 15. [Weather Observation Station 10](https://www.hackerrank.com/challenges/weather-observation-station-10/problem)
+### 15. [Weather Observation Station 10](https://www.hackerrank.com/challenges/weather-observation-station-10/)
 
 ```sql
 SELECT DISTINCT city
@@ -139,7 +139,7 @@ SELECT DISTINCT city
  WHERE RIGHT(city,1) NOT IN ('A', 'E', 'I', 'O', 'U')
 ```
 
-### 16. [Weather Observation Station 11](https://www.hackerrank.com/challenges/weather-observation-station-11/problem)
+### 16. [Weather Observation Station 11](https://www.hackerrank.com/challenges/weather-observation-station-11/)
 
 ```sql
 SELECT DISTINCT city
@@ -148,7 +148,7 @@ SELECT DISTINCT city
         (RIGHT(city,1) NOT IN ('A', 'E', 'I', 'O', 'U')))
 ```
 
-### 17. [Weather Observation Station 12](https://www.hackerrank.com/challenges/weather-observation-station-12/problem)
+### 17. [Weather Observation Station 12](https://www.hackerrank.com/challenges/weather-observation-station-12/)
 
 ```sql
 SELECT DISTINCT city
@@ -158,7 +158,7 @@ SELECT DISTINCT city
 ```
 
 
-### 18. [Higher Than 75 Marks](https://www.hackerrank.com/challenges/more-than-75-marks/problem)
+### 18. [Higher Than 75 Marks](https://www.hackerrank.com/challenges/more-than-75-marks/)
 
 ```sql
 SELECT name
@@ -169,7 +169,7 @@ SELECT name
  ORDER BY RIGHT(name,3), id;
 ```
 
-### 19. [Employee Names](https://www.hackerrank.com/challenges/name-of-employees/problem)
+### 19. [Employee Names](https://www.hackerrank.com/challenges/name-of-employees/)
 
 ```sql
 SELECT name
@@ -177,7 +177,7 @@ SELECT name
  ORDER BY name
 ```
 
-### 20. [Employee Salaries](https://www.hackerrank.com/challenges/salary-of-employees/problem)
+### 20. [Employee Salaries](https://www.hackerrank.com/challenges/salary-of-employees/)
 
 ```sql
 SELECT name
@@ -186,7 +186,7 @@ SELECT name
  ORDER BY employee_id
 ```
 
-### 21. [Type of Triangle](https://www.hackerrank.com/challenges/what-type-of-triangle/problem)
+### 21. [Type of Triangle](https://www.hackerrank.com/challenges/what-type-of-triangle/)
 
 ```sql
 SELECT CASE
@@ -198,7 +198,7 @@ SELECT CASE
   FROM triangles
 ```
 
-### 22. [Revising Aggregations - The Count Function](https://www.hackerrank.com/challenges/revising-aggregations-the-count-function/problem)
+### 22. [Revising Aggregations - The Count Function](https://www.hackerrank.com/challenges/revising-aggregations-the-count-function/)
 
 ```sql
 SELECT COUNT(*)
@@ -206,28 +206,119 @@ SELECT COUNT(*)
  WHERE population > 100000
 ```
 
-### 23. []()
+### 23. [Revising Aggregations - The Sum Function](https://www.hackerrank.com/challenges/revising-aggregations-sum/)
 
 ```sql
-
+SELECT SUM(population)
+  FROM city
+ WHERE district = 'California'
 ```
 
-### 24. []()
+### 24. [Revising Aggregations - Averages](https://www.hackerrank.com/challenges/revising-aggregations-the-average-function/)
 
 ```sql
-
+SELECT AVG(population)
+  FROM city
+ WHERE district = 'California'
 ```
 
-### 25. []()
+### 25. [Average Population](https://www.hackerrank.com/challenges/average-population/)
 
 ```sql
-
+SELECT ROUND(AVG(population), 0)
+  FROM city
 ```
+
+### 26. [Japan Population](https://www.hackerrank.com/challenges/japan-population/)
+
+```sql
+SELECT SUM(population)
+  FROM city
+ WHERE countrycode = 'JPN'
+```
+
+### 27. [Population Density Difference](https://www.hackerrank.com/challenges/population-density-difference/)
+
+```sql
+SELECT (MAX(population) - MIN(population))
+  FROM city
+```
+
+### 28. [Weather Observation Station 2](https://www.hackerrank.com/challenges/weather-observation-station-2/)
+
+```sql
+SELECT ROUND(SUM(lat_n), 2), ROUND(SUM(long_w), 2)
+  FROM station
+```
+
+### 29. [The Blunder](https://www.hackerrank.com/challenges/the-blunder/)
+
+```sql
+SELECT CEIL(AVG(salary) - AVG(REPLACE(salary, '0','')))
+  FROM employees
+```
+
+### 30. [Top Earners](https://www.hackerrank.com/challenges/earnings-of-employees/)
+
+```sql
+SELECT salary*months AS earnings, COUNT(*)
+  FROM employee
+ GROUP BY earnings
+ ORDER BY earnings DESC
+ LIMIT 1
+```
+
+### 31. [Weather Observation Station 13](https://www.hackerrank.com/challenges/weather-observation-station-13/)
+
+```sql
+SELECT ROUND(SUM(lat_n), 4)
+  FROM station
+ WHERE lat_n BETWEEN 38.7880 AND 137.2345
+```
+
+### 32. [Weather Observation Station 14](https://www.hackerrank.com/challenges/weather-observation-station-14/)
+
+```sql
+SELECT ROUND(MAX(lat_n), 4)
+  FROM station
+ WHERE lat_n < 137.2345
+```
+
+### 33. [Weather Observation Station 15](https://www.hackerrank.com/challenges/weather-observation-station-15/)
+
+```sql
+SELECT ROUND(long_w, 4)
+  FROM station
+ WHERE lat_n < 137.2345
+ ORDER BY lat_n DESC
+ LIMIT 1
+```
+
+### 34. [Weather Observation Station 16](https://www.hackerrank.com/challenges/weather-observation-station-16/)
+
+```sql
+SELECT ROUND(lat_n, 4)
+  FROM station
+ WHERE lat_n > 38.7780
+ ORDER BY lat_n ASC
+ LIMIT 1
+```
+
+### 35. [Weather Observation Station 17](https://www.hackerrank.com/challenges/weather-observation-station-17/)
+
+```sql
+SELECT ROUND(long_w, 4)
+  FROM station
+ WHERE lat_n > 38.7780
+ ORDER BY lat_n
+ LIMIT 1
+```
+
 
 
 ## Medium
 
-### 1. [The PADS](https://www.hackerrank.com/challenges/the-pads/problem)
+### 1. [The PADS](https://www.hackerrank.com/challenges/the-pads/)
 
 ```sql
 SELECT CONCAT(name, '(', SUBSTR(occupation,1,1), ')')
@@ -243,16 +334,18 @@ SELECT CONCAT ("There are a total of ", occupation_count, ' ', LOWER(occupation)
  ORDER BY occupation_count, occupation;
 ```
 
-### 2. []()
+### 2. [Weather Observation Station 18](https://www.hackerrank.com/challenges/weather-observation-station-18/)
 
 ```sql
-
+SELECT ROUND(MAX(lat_n) - MIN(lat_n) + MAX(long_w) - MIN(long_w),4)
+  FROM station
 ```
 
-### 3. []()
+### 3. [Weather Observation Station 19](https://www.hackerrank.com/challenges/weather-observation-station-19/)
 
 ```sql
-
+SELECT ROUND(SQRT(POW(MAX(lat_n)-MIN(lat_n), 2) + POW(MAX(long_w)-MIN(long_w), 2)), 4)
+  FROM station
 ```
 
 ### 4. []()
