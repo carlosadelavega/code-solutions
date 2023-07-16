@@ -314,7 +314,35 @@ SELECT ROUND(long_w, 4)
  LIMIT 1
 ```
 
+### 36. [Population Census](https://www.hackerrank.com/challenges/asian-population/)
 
+```sql
+SELECT SUM(a.population)
+  FROM city a
+ INNER JOIN country b
+    ON a.countrycode = b.code
+ WHERE b.continent = 'Asia'
+```
+
+### 37. [African Cities](https://www.hackerrank.com/challenges/african-cities/)
+
+```sql
+SELECT a.name
+  FROM city a
+ INNER JOIN country b
+    ON a.countrycode = b.code
+ WHERE b.continent = 'Africa'
+```
+
+### 38. [Average Population of Each Continent](https://www.hackerrank.com/challenges/average-population-of-each-continent/)
+
+```sql
+SELECT a.continent, FLOOR(AVG(b.population))
+  FROM country a
+ INNER JOIN city b
+    ON a.code = b.countrycode
+ GROUP BY a.continent
+```
 
 ## Medium
 
@@ -348,10 +376,22 @@ SELECT ROUND(SQRT(POW(MAX(lat_n)-MIN(lat_n), 2) + POW(MAX(long_w)-MIN(long_w), 2
   FROM station
 ```
 
-### 4. []()
+### 4. [The Report](https://www.hackerrank.com/challenges/the-report/)
 
 ```sql
-
+SELECT s.name, g.grade, s.marks
+  FROM students s
+ INNER JOIN grades g
+    ON s.marks BETWEEN g.min_mark AND g.max_mark
+ WHERE g.grade >= 8
+ ORDER BY g.grade DESC, s.name ASC;
+ 
+SELECT REPLACE(s.name, s.name, 'NULL'),  g.grade, s.marks
+  FROM students s
+ INNER JOIN grades g
+    ON s.marks BETWEEN g.min_mark AND g.max_mark
+ WHERE g.grade < 8
+ ORDER BY g.grade DESC, s.marks ASC;
 ```
 
 ### 5. []()
